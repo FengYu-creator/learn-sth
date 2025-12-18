@@ -4,8 +4,14 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sTPytmNtE74Bt4khCApz-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="KTBgErp3LaEhsaTK-nyp-2" edge="1" parent="1" source="sTPytmNtE74Bt4khCApz-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KTBgErp3LaEhsaTK-nyp-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTPytmNtE74Bt4khCApz-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="移动" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KTBgErp3LaEhsaTK-nyp-1" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value=".normalize获取单位向量-方向&lt;div&gt;位置+=单位向量进行移动&lt;br&gt;&lt;div&gt;&lt;div&gt;Time.deltaTime均衡移动&lt;/div&gt;&lt;/div&gt;&lt;div&gt;速度&lt;div&gt;停止距离阈值&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="60" y="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

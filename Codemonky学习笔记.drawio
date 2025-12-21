@@ -79,6 +79,39 @@
         <mxCell id="kWJY3WdmYhKHHWhkWSS2-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="临时数值如停止距离最好写一个变量名代替" vertex="1">
           <mxGeometry height="60" width="120" x="-120" y="460" as="geometry" />
         </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-3" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-12" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-18" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="射线检测" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-14" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-16" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-13" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-15" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-17" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="从摄像机发射到屏幕点&lt;div&gt;类似一个四棱锥，顶点是摄像机，底部是屏幕显示画面&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="-150" y="850" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

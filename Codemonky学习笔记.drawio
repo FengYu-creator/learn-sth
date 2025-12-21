@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.9">
+  <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
+    <mxGraphModel dx="1992" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-2" edge="1" parent="1" source="gAH_IwDu80RLCn2CszW4-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gAH_IwDu80RLCn2CszW4-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="移动" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-4" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-6" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-1" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="首先你要得到目标点" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-3" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="创建一个方法接收一个参数（Vector3类型）" vertex="1">
+          <mxGeometry height="60" width="310" x="290" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-8" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-27" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-5" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="让单位位置朝目标点方向移动" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-10" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-15" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="需要获得方向" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-17" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-19" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="然后进行移动" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="方向向量＋归一化&lt;div&gt;得到单位方向&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-16" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="所挂载物体的位置朝目标方向前进&lt;div&gt;update（transform.positon+=方向向量*速度）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="260" x="490" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-18" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;div&gt;增设一个速度值&lt;/div&gt;time.deltaTime平滑" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-20" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="停止距离外，按键后传入目标点" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="游戏对象-对齐视图-快速设置摄像机角度" vertex="1">
+          <mxGeometry height="60" width="120" x="-120" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-28" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-30" edge="1" parent="1" source="kWJY3WdmYhKHHWhkWSS2-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kWJY3WdmYhKHHWhkWSS2-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-26" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设定一个停止距离防止抽搐" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-29" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Vector3.Distence（，）" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="kWJY3WdmYhKHHWhkWSS2-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="临时数值如停止距离最好写一个变量名代替" vertex="1">
+          <mxGeometry height="60" width="120" x="-120" y="460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

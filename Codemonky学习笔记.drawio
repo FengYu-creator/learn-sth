@@ -91,26 +91,83 @@
         <mxCell id="MOGzNiYmNXd2CeV0UYgI-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="射线检测" vertex="1">
           <mxGeometry height="60" width="120" x="80" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-2" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-4" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="从某点到某点" vertex="1">
           <mxGeometry height="60" width="120" x="290" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-14" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-13" value="">
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-6" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="80" y="950" as="geometry" />
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="返回检测信息" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="940" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-16" edge="1" parent="1" source="MOGzNiYmNXd2CeV0UYgI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MOGzNiYmNXd2CeV0UYgI-15" value="">
+        <mxCell id="MOGzNiYmNXd2CeV0UYgI-17" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="从摄像机发射到屏幕点&lt;div&gt;类似一个四棱锥&lt;/div&gt;&lt;div&gt;顶点是摄像机，底部是屏幕显示画面&lt;/div&gt;&lt;div&gt;摄像机到屏幕坐标的延长线与地面交点为世界坐标&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="210" x="-220" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-8" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-7" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-13" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="80" y="1050" as="geometry" />
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-1" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设定目标层&lt;div&gt;检测碰撞体&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-15" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="80" y="1150" as="geometry" />
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-3" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Camera.main.ScreenPointToRay（）&lt;div&gt;从主摄像机到屏幕某点&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="240" y="760" as="geometry" />
         </mxCell>
-        <mxCell id="MOGzNiYmNXd2CeV0UYgI-17" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="从摄像机发射到屏幕点&lt;div&gt;类似一个四棱锥，顶点是摄像机，底部是屏幕显示画面&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="150" x="-150" y="850" as="geometry" />
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-5" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获得世界坐标" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-10" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="遮罩层&lt;div&gt;可用私有变量显示在编辑器中设置&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="需要一个实例，所以要实例化当前对象，再通过实例引用变量" vertex="1">
+          <mxGeometry height="60" width="120" x="690" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-13" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="单位选择" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-15" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-17" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="首先要有一个变量承载目标单位" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设置一个默认选中的单位？" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-19" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-21" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-16" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="移动逻辑修改-让变量承载的单位移动而不是移动脚本所挂载的对象单位移动" vertex="1">
+          <mxGeometry height="60" width="200" x="40" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-23" edge="1" parent="1" source="eSHQniJ6YSzMFE89v3S5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eSHQniJ6YSzMFE89v3S5-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-18" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="射线检测切换变量承载对象" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-20" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="位置初始化赋值（默认目标位置在第一个单位那里" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="eSHQniJ6YSzMFE89v3S5-22" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设定好层级遮罩" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="1400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

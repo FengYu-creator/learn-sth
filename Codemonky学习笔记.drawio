@@ -223,6 +223,68 @@
         <mxCell id="LOAvp5lxuuVe5cljuXPn-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Awake用于初始化&lt;div&gt;Start用于调用&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="-590" y="370" as="geometry" />
         </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-24" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-27" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="选中特效" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-21" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="选中图标除去碰撞器，设为透明，位置比地板高一丝丝" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-25" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="修改预制体" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-31" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-26" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取特效" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-38" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-28" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="MeshRenderer类型的组件" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="1724" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-32" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-34" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-33" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="1840" />
+              <mxPoint x="600" y="1840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-30" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取引用" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-33" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取当前选中单位" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="1810" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-35" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LOAvp5lxuuVe5cljuXPn-36" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="1790" />
+            </Array>
+            <mxPoint x="360" y="1790" as="sourcePoint" />
+            <mxPoint x="560" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="选中单位时触发事件" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="1810" as="geometry" />
+        </mxCell>
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-37" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="初始化（Get组件然后赋值变量）" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="1724" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

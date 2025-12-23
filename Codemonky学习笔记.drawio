@@ -220,7 +220,7 @@
         <mxCell id="LOAvp5lxuuVe5cljuXPn-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="编辑器可以进行脚本执行顺序排序" vertex="1">
           <mxGeometry height="60" width="120" x="-310" y="300" as="geometry" />
         </mxCell>
-        <mxCell id="LOAvp5lxuuVe5cljuXPn-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Awake用于初始化&lt;div&gt;Start用于调用&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="-590" y="370" as="geometry" />
         </mxCell>
       </root>

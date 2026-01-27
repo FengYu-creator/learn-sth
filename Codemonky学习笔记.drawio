@@ -217,8 +217,8 @@
         <mxCell id="8_JblzJnmhqt1YXrOPkI-25" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8_JblzJnmhqt1YXrOPkI-24" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LOAvp5lxuuVe5cljuXPn-16" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="可以设为bool值，ture时return中断代码，不在点击同时进行移动" vertex="1">
-          <mxGeometry height="60" width="120" x="-120" y="1130" as="geometry" />
+        <mxCell id="LOAvp5lxuuVe5cljuXPn-16" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="射线检测可以设为bool值，ture（选中单位）时return中断代码，不在选中/点击单位时一起执行移动" vertex="1">
+          <mxGeometry height="90" width="150" x="-150" y="1130" as="geometry" />
         </mxCell>
         <mxCell id="LOAvp5lxuuVe5cljuXPn-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="编辑器可以进行脚本执行顺序排序" vertex="1">
           <mxGeometry height="60" width="120" x="-310" y="300" as="geometry" />
@@ -330,7 +330,7 @@
         <mxCell id="8_JblzJnmhqt1YXrOPkI-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="扩展" vertex="1">
           <mxGeometry height="60" width="120" x="80" y="1980" as="geometry" />
         </mxCell>
-        <mxCell id="8_JblzJnmhqt1YXrOPkI-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设置选中单位改为方法，内部触发事件（可以在方法内添加额外检测）" vertex="1">
+        <mxCell id="8_JblzJnmhqt1YXrOPkI-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="封装设置选中单位方法，内部触发事件（可以在方法内添加额外检测）" vertex="1">
           <mxGeometry height="60" width="120" x="290" y="1980" as="geometry" />
         </mxCell>
         <mxCell id="8_JblzJnmhqt1YXrOPkI-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="多写一个方法用于返回当前选中单位，而不是把当前选中单位设为public" vertex="1">
@@ -364,7 +364,7 @@
           <mxGeometry height="60" width="120" x="950" y="1900" as="geometry" />
         </mxCell>
         <mxCell id="8_JblzJnmhqt1YXrOPkI-24" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="写个单例用于传递当前选中单位" vertex="1">
-          <mxGeometry height="60" width="120" x="-320" y="1130" as="geometry" />
+          <mxGeometry height="60" width="120" x="-317" y="1145" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

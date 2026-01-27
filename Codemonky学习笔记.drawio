@@ -273,6 +273,9 @@
         <mxCell id="LOAvp5lxuuVe5cljuXPn-30" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取引用" vertex="1">
           <mxGeometry height="60" width="120" x="240" y="1760" as="geometry" />
         </mxCell>
+        <mxCell id="8_JblzJnmhqt1YXrOPkI-15" edge="1" parent="1" source="LOAvp5lxuuVe5cljuXPn-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8_JblzJnmhqt1YXrOPkI-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="LOAvp5lxuuVe5cljuXPn-33" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取当前选中单位" vertex="1">
           <mxGeometry height="60" width="120" x="550" y="1810" as="geometry" />
         </mxCell>
@@ -321,11 +324,20 @@
         <mxCell id="8_JblzJnmhqt1YXrOPkI-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="扩展" vertex="1">
           <mxGeometry height="60" width="120" x="80" y="2040" as="geometry" />
         </mxCell>
-        <mxCell id="8_JblzJnmhqt1YXrOPkI-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设置选中单位改为方法，内部触发事件" vertex="1">
+        <mxCell id="8_JblzJnmhqt1YXrOPkI-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="设置选中单位改为方法，内部触发事件（可以在方法内添加额外检测）" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="2040" as="geometry" />
         </mxCell>
         <mxCell id="8_JblzJnmhqt1YXrOPkI-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="多写一个方法用于返回当前选中单位，而不是把当前选中单位设为public" vertex="1">
           <mxGeometry height="60" width="120" x="80" y="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="8_JblzJnmhqt1YXrOPkI-17" edge="1" parent="1" source="8_JblzJnmhqt1YXrOPkI-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8_JblzJnmhqt1YXrOPkI-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8_JblzJnmhqt1YXrOPkI-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取单位自身" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="1900" as="geometry" />
+        </mxCell>
+        <mxCell id="8_JblzJnmhqt1YXrOPkI-16" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="通过比较选中单位和单位自身是否相同判断单位自身特效组件开关" vertex="1">
+          <mxGeometry height="60" width="120" x="750" y="1900" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

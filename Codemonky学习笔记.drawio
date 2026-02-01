@@ -370,7 +370,7 @@
           <mxGeometry height="60" width="120" x="430" y="2400" as="geometry" />
         </mxCell>
         <mxCell id="hCI0LdiYiDplhKC1oKB5-5" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="为特定网格定义一个类—在每一个网格位置进行实例化，存储网格数据，执行逻辑" vertex="1">
-          <mxGeometry height="60" width="120" x="430" y="2480" as="geometry" />
+          <mxGeometry height="60" width="120" x="575" y="2400" as="geometry" />
         </mxCell>
         <mxCell id="hCI0LdiYiDplhKC1oKB5-12" edge="1" parent="1" source="hCI0LdiYiDplhKC1oKB5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hCI0LdiYiDplhKC1oKB5-11" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -382,19 +382,13 @@
           <mxGeometry height="60" width="120" x="80" y="2400" as="geometry" />
         </mxCell>
         <mxCell id="hCI0LdiYiDplhKC1oKB5-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取特定网格位置，检查是否存在单位" vertex="1">
-          <mxGeometry height="60" width="120" x="580" y="2480" as="geometry" />
-        </mxCell>
-        <mxCell id="hCI0LdiYiDplhKC1oKB5-14" edge="1" parent="1" source="hCI0LdiYiDplhKC1oKB5-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hCI0LdiYiDplhKC1oKB5-13" value="">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="60" width="120" x="720" y="2400" as="geometry" />
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-7" edge="1" parent="1" source="hCI0LdiYiDplhKC1oKB5-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hCI0LdiYiDplhKC1oKB5-1" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hCI0LdiYiDplhKC1oKB5-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="单元格尺寸参数&lt;div&gt;用于转换坐标&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="2400" as="geometry" />
-        </mxCell>
-        <mxCell id="hCI0LdiYiDplhKC1oKB5-13" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="每个网格位置关联特定类的对象实例&lt;div&gt;用于存储任意数据&lt;/div&gt;&lt;div&gt;执行各种操作&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="280" y="2480" as="geometry" />
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-2" edge="1" parent="1" source="4IsplLdoT9fjP3PY3eL6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hCI0LdiYiDplhKC1oKB5-7" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -417,14 +411,8 @@
         <mxCell id="4IsplLdoT9fjP3PY3eL6-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Debug.DrawLine画出世界网格" vertex="1">
           <mxGeometry height="60" width="120" x="890" y="2580" as="geometry" />
         </mxCell>
-        <mxCell id="4IsplLdoT9fjP3PY3eL6-12" edge="1" parent="1" source="4IsplLdoT9fjP3PY3eL6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4IsplLdoT9fjP3PY3eL6-11" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="实现" vertex="1">
           <mxGeometry height="60" width="120" x="80" y="2660" as="geometry" />
-        </mxCell>
-        <mxCell id="4IsplLdoT9fjP3PY3eL6-14" edge="1" parent="1" source="4IsplLdoT9fjP3PY3eL6-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4IsplLdoT9fjP3PY3eL6-13" value="">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="方法-网格坐标转世界" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="2660" as="geometry" />
@@ -469,19 +457,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="MouseWorld里的射线检测得到鼠标位置，作为世界坐标传入，除以网格系数并转换为int后输出" vertex="1">
-          <mxGeometry height="140" width="180" x="840" y="2700" as="geometry" />
+          <mxGeometry height="80" width="180" x="840" y="2730" as="geometry" />
         </mxCell>
-        <mxCell id="4IsplLdoT9fjP3PY3eL6-28" edge="1" parent="1" source="4IsplLdoT9fjP3PY3eL6-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4IsplLdoT9fjP3PY3eL6-11" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4IsplLdoT9fjP3PY3eL6-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="网格生成" vertex="1">
+        <mxCell id="4IsplLdoT9fjP3PY3eL6-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="构造网格" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="2580" as="geometry" />
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-31" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="以网格坐标x，z为基准" vertex="1">
           <mxGeometry height="60" width="120" x="560" y="2580" as="geometry" />
         </mxCell>
-        <mxCell id="4IsplLdoT9fjP3PY3eL6-33" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在update里让debug.log返回" vertex="1">
-          <mxGeometry height="60" width="120" x="1130" y="2740" as="geometry" />
+        <mxCell id="4IsplLdoT9fjP3PY3eL6-33" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在update里让debug.log返回鼠标对应的世界坐标处的网格坐标" vertex="1">
+          <mxGeometry height="60" width="120" x="1080" y="2740" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -462,8 +462,8 @@
         <mxCell id="4IsplLdoT9fjP3PY3eL6-34" edge="1" parent="1" source="4IsplLdoT9fjP3PY3eL6-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4IsplLdoT9fjP3PY3eL6-33" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4IsplLdoT9fjP3PY3eL6-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="MouseWorld射线检测得到鼠标位置，作为世界坐标传入GetGridPosition方法，此方法接受世界坐标，然后直接调用构造函数GridPositon，构造函数接收（x，z除以网格参数并转换为int的世界坐标）后传入内部，内部用this将此赋给GridPosition构造体本身的x，z；构造完成后将构造体实例化并return" vertex="1">
-          <mxGeometry height="140" width="200" x="840" y="2700" as="geometry" />
+        <mxCell id="4IsplLdoT9fjP3PY3eL6-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="MouseWorld射线检测得到鼠标位置，作为世界坐标传入GetGridPosition方法，此方法接受世界坐标，用new调用构造函数GridPositon产生构造体实例返回。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;构造函数接收（x，z除以网格参数并转换为int的世界坐标）后传入内部，内部用this将此赋给GridPosition构造体本身的x，z；构造完成后将构造体实例化并return&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="200" x="840" y="2660" as="geometry" />
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="构造网格" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="2580" as="geometry" />

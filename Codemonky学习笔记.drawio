@@ -531,7 +531,7 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-5" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-1" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="网格调试对象" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="网格调试对象（预制体）" vertex="1">
           <mxGeometry height="60" width="120" x="-20" y="3495" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-10" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-9" value="">
@@ -558,10 +558,13 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-18" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-17" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="创建网格对象方法" vertex="1">
-          <mxGeometry height="60" width="120" x="270" y="3960" as="geometry" />
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="新建方法创建网格调试对象" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="3960" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-20" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-29" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-28" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-17" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="遍历网格坐标生成网格位置" vertex="1">
@@ -576,17 +579,47 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-24" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-23" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-21" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="世界坐标位置实例化网格调试对象预制体" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-21" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在世界坐标处实例化网格调试对象预制体" vertex="1">
           <mxGeometry height="60" width="120" x="660" y="3960" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-26" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-25" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="存储后获取网格调试对象预制体脚本组件" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="存储后获取预制体的脚本组件" vertex="1">
           <mxGeometry height="60" width="120" x="790" y="3960" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="使用脚本方法，依次触发-&lt;div&gt;传入网格位置参数从数组获取网格对象&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;传入网格对象参数给网格调试预制体&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="220" x="920" y="3950" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-31" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="网格调试对象预制体&lt;div&gt;持有网格对象&lt;/div&gt;&lt;div&gt;网格对象持有网格系统和网格位置&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="120" x="1200" y="3949" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-28" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="重构：遍历网格坐标实例化网格位置" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="4050" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-37" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-30" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="网格位置已重写过的ToString输出坐标" vertex="1">
+          <mxGeometry height="60" width="120" x="1200" y="4122" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-33" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="网格对象重写ToString方法使其输出网格位置的ToString方法" vertex="1">
+          <mxGeometry height="60" width="120" x="1020" y="4122" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-35" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="预制体脚本引用文本组件&lt;div&gt;在UpDate中把网格对象的ToString赋给组件的文本&lt;/div&gt;" vertex="1">
+          <mxGeometry height="88" width="120" x="827" y="4108" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-36" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在每个网格调试对象预制体的世界位置上用文本显示其对应网格对象的网格位置" vertex="1">
+          <mxGeometry height="78" width="160" x="1180" y="4220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

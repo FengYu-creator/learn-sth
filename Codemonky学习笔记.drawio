@@ -507,7 +507,7 @@
         <mxCell id="N_XogZELSooEpoAJh8lh-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="存储数据" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="2980" as="geometry" />
         </mxCell>
-        <mxCell id="N_XogZELSooEpoAJh8lh-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="先创建变量，然后用public构造函数设置这些值" vertex="1">
+        <mxCell id="N_XogZELSooEpoAJh8lh-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="先创建变量，然后用public构造函数接收网格位置和网格系统并设置这些值" vertex="1">
           <mxGeometry height="60" width="120" x="600" y="2980" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-6" edge="1" parent="1" source="N_XogZELSooEpoAJh8lh-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N_XogZELSooEpoAJh8lh-13" value="">

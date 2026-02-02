@@ -499,10 +499,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="N_XogZELSooEpoAJh8lh-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="引用此对象所处网格位置" vertex="1">
-          <mxGeometry height="60" width="120" x="440" y="2980" as="geometry" />
+          <mxGeometry height="60" width="120" x="430" y="2980" as="geometry" />
         </mxCell>
         <mxCell id="N_XogZELSooEpoAJh8lh-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="引用创建该对象的网格系统" vertex="1">
-          <mxGeometry height="60" width="120" x="440" y="3070" as="geometry" />
+          <mxGeometry height="60" width="120" x="430" y="3060" as="geometry" />
         </mxCell>
         <mxCell id="N_XogZELSooEpoAJh8lh-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="存储数据" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="2980" as="geometry" />

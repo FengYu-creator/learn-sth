@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.6">
   <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
-    <mxGraphModel dx="1992" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1998" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -479,6 +479,42 @@
         </mxCell>
         <mxCell id="4IsplLdoT9fjP3PY3eL6-37" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Debug.Log会调用目标的ToString" vertex="1">
           <mxGeometry height="60" width="120" x="695" y="2820" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-3" edge="1" parent="1" source="N_XogZELSooEpoAJh8lh-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N_XogZELSooEpoAJh8lh-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-5" edge="1" parent="1" source="N_XogZELSooEpoAJh8lh-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N_XogZELSooEpoAJh8lh-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-9" edge="1" parent="1" source="N_XogZELSooEpoAJh8lh-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N_XogZELSooEpoAJh8lh-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="网格对象" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="2980" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="使用构造函数" vertex="1">
+          <mxGeometry height="60" width="120" x="-110" y="2980" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-7" edge="1" parent="1" source="N_XogZELSooEpoAJh8lh-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N_XogZELSooEpoAJh8lh-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="引用此对象所处网格位置" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="2980" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="引用创建该对象的网格系统" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="3070" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-11" edge="1" parent="1" source="N_XogZELSooEpoAJh8lh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N_XogZELSooEpoAJh8lh-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="存储数据" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="2980" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="先创建变量，然后用public构造函数设置这些值" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="3120" as="geometry" />
+        </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="在网格系统遍历时每次循环new调用网格位置构造函数得到并用变量存储每个网格位置；然后new 网格对象构造函数并传入网格系统本身和网格位置存储，构造每个网格对象实例，" vertex="1">
+          <mxGeometry height="120" width="210" x="250" y="3220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

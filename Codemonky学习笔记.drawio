@@ -543,7 +543,7 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="接收一个网格位置，然后用该位置的x，z参数进入数组获取网格对象" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="3840" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重构：网格坐标转换为世界坐标由接收int参数改为接收网格对象作为参数" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重构：网格坐标转换为世界坐标由接收intx，intz参数改为接收网格对象作为参数" vertex="1">
           <mxGeometry height="60" width="120" x="500" y="3840" as="geometry" />
         </mxCell>
       </root>

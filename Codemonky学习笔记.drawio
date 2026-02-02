@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.6">
   <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
-    <mxGraphModel dx="1723" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1840" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -540,8 +540,11 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="为了其他脚本也能由网格位置获取网格对象，此处不直接使用数组获取网格对象而是新建一个方法" vertex="1">
           <mxGeometry height="90" width="220" x="220" y="3740" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="接收一个网格位置，然后进入数组获取网格对象" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="接收一个网格位置，然后用该位置的x，z参数进入数组获取网格对象" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="3840" as="geometry" />
+        </mxCell>
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重构：网格坐标转换为世界坐标由接收int参数改为接收网格对象作为参数" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="3840" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

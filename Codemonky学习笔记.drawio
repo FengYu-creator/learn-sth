@@ -552,7 +552,7 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重构：网格坐标转换为世界坐标方法由接收intx，intz参数改为接收网格位置作为参数" vertex="1">
           <mxGeometry height="60" width="140" x="500" y="3840" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="标准化，将所有网格坐标换成网格位置" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="标准化，将坐标转换的网格坐标参数都换成网格位置" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="3840" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-18" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-17" value="">

@@ -516,6 +516,9 @@
         <mxCell id="N_XogZELSooEpoAJh8lh-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="在网格系统遍历时每次循环new调用网格位置构造函数得到并用变量存储每个网格位置；然后new 网格对象构造函数并传入网格系统本身和网格位置存储，构造每个网格对象实例，" vertex="1">
           <mxGeometry height="120" width="210" x="250" y="3220" as="geometry" />
         </mxCell>
+        <mxCell id="N_XogZELSooEpoAJh8lh-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="创建一个二维数组，每次循环在对应xz索引处存储对应网格对象" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="3360" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

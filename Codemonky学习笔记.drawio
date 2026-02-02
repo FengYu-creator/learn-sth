@@ -576,7 +576,7 @@
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-24" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-23" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i-RV0T7sIXF3yXgEEx6z-21" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="世界坐标位置实例化网格调试对象" vertex="1">
+        <mxCell id="i-RV0T7sIXF3yXgEEx6z-21" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="世界坐标位置实例化网格调试对象预制体" vertex="1">
           <mxGeometry height="60" width="120" x="660" y="3960" as="geometry" />
         </mxCell>
         <mxCell id="i-RV0T7sIXF3yXgEEx6z-26" edge="1" parent="1" source="i-RV0T7sIXF3yXgEEx6z-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="i-RV0T7sIXF3yXgEEx6z-25" value="">

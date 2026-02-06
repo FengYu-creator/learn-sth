@@ -654,6 +654,9 @@
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-15" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="先设计石头盖房子，再去设计稿子挖石头，再去考虑怎么设计稿子" vertex="1">
           <mxGeometry height="60" width="120" x="10" y="4720" as="geometry" />
         </mxCell>
+        <mxCell id="Qi8qyPDX3Iw5CiZz6HDm-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="需要什么-方法（参数）&lt;div&gt;做什么（接收参数）&lt;/div&gt;&lt;div&gt;得到什么（return）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="300" x="-210" y="4830" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

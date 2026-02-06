@@ -791,7 +791,7 @@
         <mxCell id="Qi8qyPDX3Iw5CiZz6HDm-47" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="声明，创建列表；字符串输出遍历列表内容，列表添加，移除单位；获取列表" vertex="1">
           <mxGeometry height="60" width="120" x="430" y="5240" as="geometry" />
         </mxCell>
-        <mxCell id="Qi8qyPDX3Iw5CiZz6HDm-49" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="修改关卡网格的Set，get等" vertex="1">
+        <mxCell id="Qi8qyPDX3Iw5CiZz6HDm-49" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="修改各处（关卡网格，unit）的Set，get，clear等方法" vertex="1">
           <mxGeometry height="60" width="120" x="430" y="5320" as="geometry" />
         </mxCell>
       </root>

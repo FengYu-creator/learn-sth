@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.6">
   <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
-    <mxGraphModel dx="1798" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1992" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -637,22 +637,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="写一个方法需要什么参数就填，然后写逻辑，可以先不考虑参数的传入" vertex="1">
-          <mxGeometry height="70" width="120" x="230" y="4550" as="geometry" />
+          <mxGeometry height="70" width="120" x="-190" y="4540" as="geometry" />
         </mxCell>
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-14" edge="1" parent="1" source="4fHdHVtfb4P5589Kz1Pi-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4fHdHVtfb4P5589Kz1Pi-13" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="每次专注于构造一个功能其中一环，而不是连环一起思考" vertex="1">
-          <mxGeometry height="60" width="120" x="230" y="4640" as="geometry" />
+          <mxGeometry height="60" width="120" x="-190" y="4640" as="geometry" />
         </mxCell>
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-16" edge="1" parent="1" source="4fHdHVtfb4P5589Kz1Pi-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4fHdHVtfb4P5589Kz1Pi-15" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-13" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="需要什么，我就假想有什么，先用，然后再去做" vertex="1">
-          <mxGeometry height="60" width="120" x="230" y="4720" as="geometry" />
+          <mxGeometry height="60" width="120" x="-190" y="4720" as="geometry" />
         </mxCell>
         <mxCell id="4fHdHVtfb4P5589Kz1Pi-15" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="先设计石头盖房子，再去设计稿子挖石头，再去考虑怎么设计稿子" vertex="1">
-          <mxGeometry height="60" width="120" x="430" y="4720" as="geometry" />
+          <mxGeometry height="60" width="120" x="10" y="4720" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.7">
   <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
-    <mxGraphModel dx="1798" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1992" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -793,6 +793,66 @@
         </mxCell>
         <mxCell id="Qi8qyPDX3Iw5CiZz6HDm-49" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="查找报错修改各处（关卡网格，unit）的Set，get，clear等方法和逻辑" vertex="1">
           <mxGeometry height="60" width="120" x="430" y="5320" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-3" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cinemachine" vertex="1">
+          <mxGeometry height="60" width="120" x="830" y="4400" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-5" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Unity官方包" vertex="1">
+          <mxGeometry height="60" width="120" x="830" y="4480" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-7" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-11" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="创建一个虚拟相机，跟随和注视一个空对象-相机控制器" vertex="1">
+          <mxGeometry height="60" width="120" x="830" y="4560" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-9" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="调整虚拟相机参数，阻尼归零，去掉摄像机移动时平滑效果" vertex="1">
+          <mxGeometry height="60" width="120" x="830" y="4640" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="改为在实际要移动的相机控制器上做平滑" vertex="1">
+          <mxGeometry height="60" width="120" x="830" y="4735" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="调整body-follow offset&lt;div&gt;Y轴调高实现俯视角&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1030" y="4560" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-18" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="相机控制器移动脚本" vertex="1">
+          <mxGeometry height="60" width="120" x="1210" y="4400" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-16" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-13" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="用forward和right代替XZ坐标的直接改变，和旋转进行联动" vertex="1">
+          <mxGeometry height="60" width="120" x="1210" y="4616" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-21" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-15" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="forward*z（前后）+right*x（左右）" vertex="1">
+          <mxGeometry height="60" width="120" x="1210" y="4727.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-19" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HvcZRZV3djCdim_yS7CQ-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-17" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="按住WASD使三维向量的Z,X为+1或-1" vertex="1">
+          <mxGeometry height="60" width="120" x="1210" y="4500" as="geometry" />
+        </mxCell>
+        <mxCell id="HvcZRZV3djCdim_yS7CQ-20" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="新建一个三维向量表示旋转，y值通过QE变为+1-1，用欧拉角+=旋转向量*旋转速度*Time.DeltaTime来进行旋转" vertex="1">
+          <mxGeometry height="107.5" width="160" x="1190" y="4820" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

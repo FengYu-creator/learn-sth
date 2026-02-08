@@ -930,8 +930,8 @@
         <mxCell id="s4HGRBFhsTGVThjyVUlH-26" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-25" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s4HGRBFhsTGVThjyVUlH-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在类作用域声明一个向量-声明一个其类型的变量初始化获取其组件-向量获取组件偏移量属性" vertex="1">
-          <mxGeometry height="100" width="120" x="1760" y="5060" as="geometry" />
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在类作用域声明一个向量-声明一个CinemachineTransposer类型的变量初始化获取虚拟相机的组件-向量获取组件偏移量属性" vertex="1">
+          <mxGeometry height="100" width="150" x="1760" y="5060" as="geometry" />
         </mxCell>
         <mxCell id="s4HGRBFhsTGVThjyVUlH-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="偏移量属性=Lerp（偏移量属性，目标偏移量属性，Time.deltaTime*缩放速度）" vertex="1">
           <mxGeometry height="60" width="290" x="1960" y="5080" as="geometry" />

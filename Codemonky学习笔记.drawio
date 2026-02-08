@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.8">
   <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
     <mxGraphModel dx="1992" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -851,8 +851,96 @@
         <mxCell id="HvcZRZV3djCdim_yS7CQ-17" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="按住WASD使三维向量的Z,X为+1或-1" vertex="1">
           <mxGeometry height="60" width="120" x="1210" y="4500" as="geometry" />
         </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-28" edge="1" parent="1" source="HvcZRZV3djCdim_yS7CQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="5280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="HvcZRZV3djCdim_yS7CQ-20" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="新建一个三维向量表示旋转，y值通过QE变为+1-1，用欧拉角+=旋转向量*旋转速度*Time.DeltaTime来进行旋转" vertex="1">
           <mxGeometry height="107.5" width="160" x="1190" y="4820" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-3" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-5" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="相机缩放" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="4400" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="调整FOV" vertex="1">
+          <mxGeometry height="60" width="120" x="1660" y="4400" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-7" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="向零调整虚拟相机跟随偏移量Y，Z" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="4540" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-9" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="无法直接引用虚拟摄像机的跟随偏移量，需要通过虚拟相机组件找到其开源脚本进行修改-然后发现可以从包里找到虚拟相机-RunTime-component中的各类型对应脚本-找到Transposer-在其中搜索offset（偏移量），" vertex="1">
+          <mxGeometry height="100" width="260" x="1390" y="4640" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-11" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-32" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="获取特定类型（Transposer）的虚拟相机组件，再修改其Offset属性" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="4770" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-13" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="由于鼠标滚轮仅在滚动时输入1或-1，因此用大于小于0判定偏移量向量的y增大缩小" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="4843.75" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-15" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="clamp函数限定偏移量向量y最大最小值" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="4920" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-17" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="把偏移量向量赋给偏移量属性" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="5000" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-21" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-29" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="5280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-16" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Lerp插值实现平滑" vertex="1">
+          <mxGeometry height="60" width="120" x="1460" y="5080" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-24" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-20" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="需要持续维护目标值，而不是直接给个值应用到目标属性" vertex="1">
+          <mxGeometry height="60" width="120" x="1610" y="5080" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-26" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s4HGRBFhsTGVThjyVUlH-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="在类作用域声明一个向量-声明一个其类型的变量初始化获取其组件-向量获取组件偏移量属性" vertex="1">
+          <mxGeometry height="100" width="120" x="1760" y="5060" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="偏移量属性=Lerp（偏移量属性，目标偏移量属性，Time.deltaTime*缩放速度）" vertex="1">
+          <mxGeometry height="60" width="290" x="1960" y="5080" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重构-封装移动，旋转，缩放三块功能到独立的函数中&lt;div&gt;可以用VS智能提取方法&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="1280" y="5280" as="geometry" />
+        </mxCell>
+        <mxCell id="s4HGRBFhsTGVThjyVUlH-31" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="序列化字段声明变量拖拽获取虚拟相机" vertex="1">
+          <mxGeometry height="60" width="120" x="1660" y="4770" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

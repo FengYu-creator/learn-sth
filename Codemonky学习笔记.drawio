@@ -936,11 +936,50 @@
         <mxCell id="s4HGRBFhsTGVThjyVUlH-25" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="偏移量属性=Lerp（偏移量属性，目标偏移量属性，Time.deltaTime*缩放速度）" vertex="1">
           <mxGeometry height="60" width="290" x="1960" y="5080" as="geometry" />
         </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-4" edge="1" parent="1" source="s4HGRBFhsTGVThjyVUlH-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uAxKNdVDmNj4JPkzb5K0-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="s4HGRBFhsTGVThjyVUlH-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="重构-把Update的一大坨封装成移动，旋转，缩放三块功能到独立的函数中&lt;div&gt;可以用VS智能提取方法&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="160" x="1280" y="5280" as="geometry" />
         </mxCell>
         <mxCell id="s4HGRBFhsTGVThjyVUlH-31" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="序列化字段声明变量拖拽获取虚拟相机" vertex="1">
           <mxGeometry height="60" width="120" x="1660" y="4770" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-820" y="5440" as="sourcePoint" />
+            <mxPoint x="2480" y="5440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="动作和UI" vertex="1">
+          <mxGeometry height="60" width="120" x="-720" y="5450" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-6" edge="1" parent="1" source="uAxKNdVDmNj4JPkzb5K0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uAxKNdVDmNj4JPkzb5K0-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-8" edge="1" parent="1" source="uAxKNdVDmNj4JPkzb5K0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uAxKNdVDmNj4JPkzb5K0-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="修改移动&lt;div&gt;单独创建移动动作&lt;/div&gt;&lt;div&gt;从Unit中提取出来&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="5520" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-5" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="重构Unit" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="5610" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-10" edge="1" parent="1" source="uAxKNdVDmNj4JPkzb5K0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uAxKNdVDmNj4JPkzb5K0-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="移动相关代码挪到&lt;div&gt;MoveAction&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1500" y="5520" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-12" edge="1" parent="1" source="uAxKNdVDmNj4JPkzb5K0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uAxKNdVDmNj4JPkzb5K0-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Unit中Public一个方法返回MoveAction中的move方法" vertex="1">
+          <mxGeometry height="60" width="120" x="1700" y="5520" as="geometry" />
+        </mxCell>
+        <mxCell id="uAxKNdVDmNj4JPkzb5K0-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="UnitActionSystem引用Unit公开方法再引用Move传入目标位置" vertex="1">
+          <mxGeometry height="60" width="120" x="1900" y="5520" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -26,7 +26,9 @@ public class UnitActionSystem : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {        
             if(TryHandleUnitSelection()) return;
-            selectedUnit.Move(MouseWorld.GetPosition());
+            selectedUnit.GetMoveAction().Move(MouseWorld.GetPosition());
+
+
             //Unit脚本初始化时获取组件位置-获取网格位置-获取网格对象-把自己传给网格对象；选中单位时获取位置-网格对象； 清除位置-网格对象-单位；赋值鼠标点击位置；位置-网格位置-网格对象，赋予选中单位；
             //想麻烦了，单位脚本挂载在不同个体上，直接用位置传就行了
         }

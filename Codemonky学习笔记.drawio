@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" version="29.6.1">
   <diagram name="第 1 页" id="btcOVySW0E39VrI0YFDn">
-    <mxGraphModel dx="2053" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2283" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -983,6 +983,9 @@
         </mxCell>
         <mxCell id="4ESdS7Vkf-Ecxrv2yFU4-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="遵循MVC&lt;div&gt;网格系统逻辑&lt;/div&gt;&lt;div&gt;网格对象存数据&lt;/div&gt;&lt;div&gt;网格预制体显示&lt;/div&gt;" vertex="1">
           <mxGeometry height="160" width="200" x="770" y="3280" as="geometry" />
+        </mxCell>
+        <mxCell id="h2R5M5uSpxXdeSv2RCpt-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MoveAction公开创建有效网格位置列表" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="5610" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-
+    [SerializeField] private Unit unit;
+    [SerializeField] private GridSystemVisual GV;
+    private MoveAction MA;
     void Start()
     {
-
-
-      // Debug.Log(new GridPosition(5, 7));//测试用，可删除
 
     }
     private void Update()
     {
-      //  Debug.Log(gridSystem.GetGridPosition(MouseWorld.GetPosition()));//传给Debug.Log一个构造体实例，Debug.Log调用该构造体的ToString
-    }
 
+
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            GV.HideAllGridPosition();
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            GV.HideAllGridPosition();
+            GV.ShowGridPositionList(unit.GetComponent<MoveAction>().GetValidGridPosition());
+        }
+    
+
+    }
 
 }

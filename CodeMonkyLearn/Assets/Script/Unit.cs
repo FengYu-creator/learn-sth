@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour
     public static event EventHandler OnAnyActionPointsChanged;
 
     private GridPosition gridPosition;
+    private UnitStat unitStat;
     private MoveAction moveAction;
     private SpinAction spinAction;
     private BaseAction[] baseActionArray;
@@ -23,6 +24,7 @@ public class Unit : MonoBehaviour
         moveAction = GetComponent<MoveAction>();
         spinAction = GetComponent<SpinAction>();
         baseActionArray = GetComponents<BaseAction>();
+        unitStat = GetComponent<UnitStat>();
     }
 
     private void Start()
@@ -45,6 +47,10 @@ public class Unit : MonoBehaviour
     public MoveAction GetMoveAction()    //获取Unit的MoveAction组件
     {
         return moveAction;
+    }
+    public UnitStat GetUnitStat()
+    {
+        return unitStat;
     }
     public GridPosition GetGridPosition()
     {

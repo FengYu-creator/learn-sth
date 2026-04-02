@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
+using System;
 
 public class StatManager : MonoBehaviour
 {
     [SerializeField] private GameObject unitPrefab;
     private UnitStatData unitStatData;
+    public int trainLevel = 0;
     public static StatManager Instance { get; private set; }
+    public event EventHandler OnClickCreat;
+    public event EventHandler OnClickPlace;
+
 
     private void Awake()
     {
@@ -18,52 +24,52 @@ public class StatManager : MonoBehaviour
         Instance = this;
 
         unitStatData = new UnitStatData();
-        RegistUnit();
+        RegistTestUnit();
     }
 
-    void Start()
+    public void RegistTestUnit()
+    {
+        unitStatData.RegisterUnit("alpha", 9, 9, 5, 5, 3, 3,Traits.Strong,Traits.Brave);
+        unitStatData.RegisterUnit("beta", 4, 4, 5, 5, 3, 3, Traits.Agile, Traits.Lazy);
+
+    }
+
+    public void CreatUnit(string name, int stability, int handling, int precision, int constitution, int willpower, int speed,Traits traits1,Traits traits2)
     {
 
-
+        unitStatData.RegisterUnit(name,stability,handling, precision,  constitution,  willpower, speed, traits1,  traits2);
+        Debug.Log("创建角色" + name);
     }
-
-    void Update()
-    {
-
-    }
-
-    public void RegistUnit()
-    {
-        unitStatData.Add_id_Name(0, "alpha");
-        unitStatData.Add_id_Name(1, "beta");
-        unitStatData.Add_id_Stats(0, 4, 4, 5, 5, 3, 3);
-        unitStatData.Add_id_Stats(1, 4, 4, 5, 5, 3, 3);
-    }
-    public void CreatUnit(string name)
-    {
-        unitStatData.RegisterUnit(name);
-    }
-    public void PlaceUnit(int id,Vector3 position)
+    public GameObject PlaceUnit(int id, Vector3 position)
     {
         GameObject unitPref = Instantiate(unitPrefab, position, Quaternion.identity);
         Unit unit = unitPref.GetComponent<Unit>();
-        
-        string name = unitStatData.GetName(id);
-        CharacterStats characterStats = unitStatData.GetCharacterStats(id);
+
+        UnitData unitdata = unitStatData.GetUnitData(id);
 
         unit.GetUnitStat().id = id;
-        unit.GetUnitStat().unitName = name;
-        unit.GetUnitStat().battleStats = characterStats;
-
+        unit.GetUnitStat().unitData = unitdata;
+        return unitPref;
     }
-    public CharacterStats GetCharacterStats(int id)
+    public UnitData GetUnitData(int id)
     {
-        return unitStatData.GetCharacterStats(id);
+       return unitStatData.GetUnitData(id);
     }
-    public string GetUnitName(int id)
+    public int GetUnitNumber()
     {
-        return unitStatData.GetName(id);
+        return unitStatData.GetUnitNumber();
     }
-
+    public List<string> GetNamePool()
+    {
+        return unitStatData.namePool;
+    }
+    public void onClickCreat()
+    {
+        OnClickCreat?.Invoke(this, EventArgs.Empty);
+    }
+    public void onClickPlace()
+    {
+        OnClickPlace?.Invoke(this, EventArgs.Empty);
+    }
 
 }

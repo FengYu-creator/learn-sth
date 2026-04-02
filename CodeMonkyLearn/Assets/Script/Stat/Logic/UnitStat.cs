@@ -6,12 +6,14 @@ public class UnitStat : MonoBehaviour
 {
     public int id;
     public string unitName;
-    public CharacterStats battleStats;
+    private CharacterStats battleStats;
+    public UnitData unitData;
 
     void Start()
     {
-        battleStats = StatManager.Instance.GetCharacterStats(id);
-        
+        unitData = StatManager.Instance.GetUnitData(id);
+        battleStats = unitData.stats;
+        unitName = unitData.name;
     }
 
 

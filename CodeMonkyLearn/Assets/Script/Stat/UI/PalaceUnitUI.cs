@@ -11,6 +11,7 @@ public class PalaceUnitUI : MonoBehaviour
     [SerializeField] private Transform placeCardContainer;
     [SerializeField] private Transform placeScroll;
     [SerializeField] protected Button X;
+
     private int unitNumber;
     private bool isPlaceCardOpen= false;
     private bool haveInstantiated = false;
@@ -20,7 +21,9 @@ public class PalaceUnitUI : MonoBehaviour
     }
     void Start()
     {
+        StatManager.Instance.OnClickToPlacePosition += StatManager_OnClickToPlacePosition;
         StatManager.Instance.OnClickPlace += StatManager_OnClickPlace;
+        Events.BattleStarted += PalaceUnitUI_BattleStarted;
         X.onClick.AddListener(() => { placeScroll.gameObject.SetActive(false); isPlaceCardOpen = false; });
         placeScroll.gameObject.SetActive(false);
     }
@@ -28,12 +31,7 @@ public class PalaceUnitUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.L)&&!isPlaceCardOpen) 
-        {
-            placeScroll.gameObject.SetActive(true);
-            isPlaceCardOpen = true;
-            InstantiatePlaceCard();
-        }
+
     }
 
     public void InstantiatePlaceCard()
@@ -53,11 +51,38 @@ public class PalaceUnitUI : MonoBehaviour
         {
             return;
         }
-        //todo.战斗开始事件——恢复haveInstantiated
     }
     public void StatManager_OnClickPlace(object sender,EventArgs e)
     {
         //placeCardContainer.gameObject.SetActive(false);
     }
+    public void StatManager_OnClickToPlacePosition(object sender,EventArgs e)
+    {
+        if (!isPlaceCardOpen)
+        {
+            placeScroll.gameObject.SetActive(true);
+            isPlaceCardOpen = true;
+            InstantiatePlaceCard();
+        }
 
+    }
+    private void  PalaceUnitUI_BattleStarted()
+    {
+
+        isPlaceCardOpen = false;
+        haveInstantiated = false;
+        foreach (Transform child in placeCardContainer)
+        {
+            Destroy(child.gameObject);
+        }
+        placeScroll.gameObject.SetActive(false);
+
+    }
+    private void OnDestroy()
+
+    {
+
+        Events.BattleStarted -= PalaceUnitUI_BattleStarted;
+
+    }
 }

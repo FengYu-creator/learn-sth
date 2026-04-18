@@ -13,11 +13,12 @@ public class TurnSystemUI : MonoBehaviour
     void Start()
     {
         TurnSystem.Instance.OnTurnChanged += TurnSystem_OnTurnChanged;
-
+        Events.BattleStarted += TurnSystem_OnBattleStarted;
         ClickNextTurn();
         UpdateTurnText();
         UpdateEnemyTurnVisual();
         UpdateEndTurnButton();
+        endTurnBtn.gameObject.SetActive(false);
     }
 
     void Update()
@@ -28,6 +29,11 @@ public class TurnSystemUI : MonoBehaviour
         UpdateEnemyTurnVisual();
         UpdateTurnText();
         UpdateEndTurnButton();
+    }
+    private void TurnSystem_OnBattleStarted()
+    {
+        endTurnBtn.gameObject.SetActive(true);
+
     }
 
     private void ClickNextTurn()

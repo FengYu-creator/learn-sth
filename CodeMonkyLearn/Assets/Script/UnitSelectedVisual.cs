@@ -26,6 +26,8 @@ public class UnitSelectedVisual : MonoBehaviour
     }
     private void UpdateVisual()
     {
+        if (meshRenderer == null) return;
+
         if (UnitActionSystem.Instance.GetSelectedUnit() == unit)//比较选中单位和单位自身是否一致
         {
             meshRenderer.enabled = true;
@@ -34,5 +36,9 @@ public class UnitSelectedVisual : MonoBehaviour
         {
             meshRenderer.enabled = false;
         }
+    }
+    private void OnDestroy()//
+    {
+        UnitActionSystem.Instance.OnSelectedUnitChanged -= UnitActionSystem_OnSelectedUnitChanged;
     }
 }

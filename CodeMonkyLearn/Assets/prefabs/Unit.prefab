@@ -2013,6 +2013,8 @@ GameObject:
   - component: {fileID: 3637235505619491992}
   - component: {fileID: 9189632004498385481}
   - component: {fileID: 4241800784765827265}
+  - component: {fileID: -3164118757905444186}
+  - component: {fileID: -339854703534517337}
   m_Layer: 8
   m_Name: Unit
   m_TagString: Player
@@ -2123,6 +2125,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   unitName: 
+  unitData:
+    name: 
+    stats:
+      Stability: 0
+      Handling: 0
+      Precision: 0
+      Constitution: 0
+      Willpower: 0
+      Speed: 0
+    traits: 
+--- !u!114 &-3164118757905444186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466238473546547193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b660bbe9a1e49824a8c84c9ea79c6f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-339854703534517337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466238473546547193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16a3b437f4b6a44e9686897f3bee8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4548392978038878522
 GameObject:
   m_ObjectHideFlags: 0

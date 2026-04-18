@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 public class CameraController : MonoBehaviour
 {
-    private const float MAX_FOLLOW_Y_OFFSET = 12f;
+    private const float MAX_FOLLOW_Y_OFFSET = 20f;
     private const float MIN_FOLLOW_Y_OFFSET = 2f;
 
     [SerializeField] CinemachineVirtualCamera CinemachineVirtualCamera;

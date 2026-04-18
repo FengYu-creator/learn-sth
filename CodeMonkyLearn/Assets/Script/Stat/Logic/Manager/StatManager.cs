@@ -12,7 +12,9 @@ public class StatManager : MonoBehaviour
     public static StatManager Instance { get; private set; }
     public event EventHandler OnClickCreat;
     public event EventHandler OnClickPlace;
+    public event EventHandler OnClickToPlacePosition;
 
+    private Vector3 placePosition;
 
     private void Awake()
     {
@@ -63,6 +65,14 @@ public class StatManager : MonoBehaviour
     {
         return unitStatData.namePool;
     }
+    public void  SetPlacePosition(Vector3 p)
+    {
+        placePosition = p;
+    }
+    public Vector3 GetPlacePosition()
+    {
+        return placePosition;
+    }
     public void onClickCreat()
     {
         OnClickCreat?.Invoke(this, EventArgs.Empty);
@@ -70,6 +80,10 @@ public class StatManager : MonoBehaviour
     public void onClickPlace()
     {
         OnClickPlace?.Invoke(this, EventArgs.Empty);
+    }
+    public void onClickToPlacePosition()
+    {
+        OnClickToPlacePosition?.Invoke(this, EventArgs.Empty);
     }
 
 }

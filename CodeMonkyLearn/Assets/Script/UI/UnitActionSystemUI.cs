@@ -42,6 +42,7 @@ public class ActionSystemUI : MonoBehaviour
         actionButtonUIList.Clear();
 
         Unit selectedUnit = UnitActionSystem.Instance.GetSelectedUnit();
+        if (selectedUnit == null) return;
 
         foreach (BaseAction baseAction in selectedUnit.GetBaseActionArray())
         {
@@ -79,6 +80,7 @@ public class ActionSystemUI : MonoBehaviour
     private void UpdateActionPoint ()
     {
         Unit selectedUnit = UnitActionSystem.Instance.GetSelectedUnit();
+        if (selectedUnit == null) return;
         actionPointText.text = "Action Point:" + selectedUnit.GetActionPoint();
     }
 

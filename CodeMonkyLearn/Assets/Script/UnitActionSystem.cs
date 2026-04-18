@@ -14,6 +14,7 @@ public class UnitActionSystem : MonoBehaviour
     public event EventHandler OnSelectedActionChanged;
     public event EventHandler<bool> OnBusyChanged;
     public event EventHandler OnActionStarted;
+    private bool isBattleStart=false;
 
 
     private bool isBusy;
@@ -53,6 +54,10 @@ public class UnitActionSystem : MonoBehaviour
         {
             return;
         }
+        if(!isBattleStart)
+        {
+            return;
+        }
 
         HandleSelectedAction();
 
@@ -66,7 +71,11 @@ public class UnitActionSystem : MonoBehaviour
 
     private void HandleSelectedAction( )
     {
-                
+        if (selectedAction == null)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -111,13 +120,16 @@ public class UnitActionSystem : MonoBehaviour
         }
         return false;
     }
-    private void SetSelectedUnit(Unit unit)
+    public void SetSelectedUnit(Unit unit)
     {
         selectedUnit = unit;
 
         OnSelectedUnitChanged?.Invoke(this,EventArgs.Empty);//this将当前实例传递给事件的订阅者,订阅者可借此访问触发事件的实例的其他属性（selectedUnit)和方法
-        
-        SetSelectedAction(selectedUnit.GetMoveAction());
+
+        if (unit != null)
+        {
+            SetSelectedAction(selectedUnit.GetMoveAction());
+        }
     }
     public Unit GetSelectedUnit()
     {
@@ -146,6 +158,16 @@ public class UnitActionSystem : MonoBehaviour
         OnBusyChanged?.Invoke(this, isBusy);
     }
     
+
+    //一些状态改变方法
+    public void OnBattleStart()
+    {
+        isBattleStart = true;
+    }
+    public void OnBattleEnd()
+    {
+        isBattleStart = false;
+    }
 
  
 }

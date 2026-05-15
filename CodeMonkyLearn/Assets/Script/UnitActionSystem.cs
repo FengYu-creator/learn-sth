@@ -54,10 +54,13 @@ public class UnitActionSystem : MonoBehaviour
         {
             return;
         }
-        if(!isBattleStart)
+        if (!isBattleStart)
         {
             return;
         }
+
+        // 进入射击瞄准状态后，禁止切换单位
+        if (Events.IsInAimState) return;
 
         HandleSelectedAction();
 

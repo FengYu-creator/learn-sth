@@ -2015,6 +2015,7 @@ GameObject:
   - component: {fileID: 4241800784765827265}
   - component: {fileID: -3164118757905444186}
   - component: {fileID: -339854703534517337}
+  - component: {fileID: 6245280794142555151}
   m_Layer: 8
   m_Name: Unit
   m_TagString: Player
@@ -2124,7 +2125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  unitName: 
   unitData:
     name: 
     stats:
@@ -2135,6 +2135,26 @@ MonoBehaviour:
       Willpower: 0
       Speed: 0
     traits: 
+  battleStats:
+    Stability: 0
+    Handling: 0
+    Precision: 0
+    Constitution: 0
+    Willpower: 0
+    Speed: 0
+    OBStability: 0
+    OBHandling: 0
+    OBPrecision: 0
+    OBConstitution: 0
+    OBWillpower: 0
+    OBSpeed: 0
+    OBGunType: 0
+    OBHRecoil: 0
+    OBVRecoil: 0
+    OBDamage: 0
+    OBRange: 0
+    OBFireRate: 0
+    OBStaminaCost: 0
 --- !u!114 &-3164118757905444186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2147,6 +2167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b660bbe9a1e49824a8c84c9ea79c6f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equippedGunId: -1
 --- !u!114 &-339854703534517337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,6 +2180,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16a3b437f4b6a44e9686897f3bee8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePoint: {fileID: 301551698656505081}
+--- !u!114 &6245280794142555151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466238473546547193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7acff5ce94a101f4d93c0b0d53fa0d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 301551698656505081}
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  maxReflectCount: 3
+  lineColor: {r: 1, g: 0, b: 0, a: 1}
+  lineWidth: 0.05
 --- !u!1 &4548392978038878522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,6 +2825,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c25ac4fdc903e7d49a7520930673ecd6, type: 3}
+--- !u!4 &301551698656505081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9070443908756485236, guid: c25ac4fdc903e7d49a7520930673ecd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8777483794742450317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8781889275133135841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4620998167008108, guid: c25ac4fdc903e7d49a7520930673ecd6,

@@ -1,36 +1,67 @@
-using System;
 using UnityEngine;
+using System;
 
 public class ShootAction : MonoBehaviour
 {
-    public event EventHandler OnEnterAimState;
-    public event EventHandler OnExitAimState;
+    [Header("激光发射点")]
+    [SerializeField] private Transform firePoint;  // 激光/子弹的发射位置
 
-    private bool isAimActive;
+    /// <summary>
+    /// 激光/子弹发射点
+    /// </summary>
+    public Transform FirePoint => firePoint;
 
-    void Update()
+    /// <summary>
+    /// 当前回合是否可以进入射击状态
+    /// </summary>
+    public bool CanEnterShoot { get; private set; } = true;
+
+    /// <summary>
+    /// 本回合是否已触发过射击
+    /// </summary>
+    private bool hasShotThisTurn = false;
+
+    /// <summary>
+    /// 射击后由 ShootUI 直接调用，锁定本回合
+    /// </summary>
+    public void LockShootThisTurn()
     {
-        // 按下右键进入瞄准
-        if (Input.GetKeyDown(KeyCode.Mouse1) && !isAimActive)
+        hasShotThisTurn = true;
+        CanEnterShoot = false;
+    }
+
+    /// <summary>
+    /// 回合变化时，若为玩家回合则重置
+    /// </summary>
+    private void OnTurnChanged(object sender, EventArgs e)
+    {
+        // 任何回合切换都清空选中单位
+        if (UnitActionSystem.Instance != null)
         {
-            EnterAim();
+            UnitActionSystem.Instance.SetSelectedUnit(null);
         }
-        // 松开右键退出瞄准
-        if (Input.GetKeyUp(KeyCode.Mouse1) && isAimActive)
+
+        // 只有玩家回合才重置射击状态
+        if (TurnSystem.Instance != null && TurnSystem.Instance.IsPlayerTurn())
         {
-            ExitAim();
+            CanEnterShoot = true;
+            hasShotThisTurn = false;
         }
     }
 
-    private void EnterAim()
+    private void OnEnable()
     {
-        isAimActive = true;
-        OnEnterAimState?.Invoke(this, EventArgs.Empty);
+        if (TurnSystem.Instance != null)
+        {
+            TurnSystem.Instance.OnTurnChanged += OnTurnChanged;
+        }
     }
 
-    private void ExitAim()
+    private void OnDisable()
     {
-        isAimActive = false;
-        OnExitAimState?.Invoke(this, EventArgs.Empty);
+        if (TurnSystem.Instance != null)
+        {
+            TurnSystem.Instance.OnTurnChanged -= OnTurnChanged;
+        }
     }
 }

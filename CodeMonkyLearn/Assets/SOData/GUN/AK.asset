@@ -20,6 +20,10 @@ MonoBehaviour:
   Precision: 5
   Range: 0
   BaseDamage: 30
-  FireRate: 0
+  FireRate: 0.2
+  StaminaCost: 10
   MaxAmmo: 20
+  StabilityMod: 0
+  PrecisionMod: 0
+  HandlingMod: 0
   compatibleParts: []

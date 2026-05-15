@@ -30,4 +30,5 @@ public class UnitGun : MonoBehaviour
     {
         return equippedGunId >= 0;
     }
+    //获取弹匣容量，记录当前弹药量
 }

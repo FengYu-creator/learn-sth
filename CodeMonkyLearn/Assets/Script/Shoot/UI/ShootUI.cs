@@ -242,10 +242,10 @@ public class ShootUI : MonoBehaviour
                 // 发布射击事件（供其他系统响应，如 LaserBeam 等）
                 Events.CallShoot();
 
-                // 直接锁定当前单位的射击状态
+                // 执行射击（计算路径、生成子弹、锁定本回合）
                 if (currentShootAction != null)
                 {
-                    currentShootAction.LockShootThisTurn();
+                    currentShootAction.ExecuteShoot();
                 }
 
                 // 射击后立即更新按钮状态（可能退出瞄准状态）

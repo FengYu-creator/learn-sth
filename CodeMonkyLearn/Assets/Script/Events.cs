@@ -36,4 +36,13 @@ public static class Events
     /// 当前是否处于瞄准状态
     /// </summary>
     public static bool IsInAimState { get; set; }
+
+    /// <summary>
+    /// 子弹命中目标事件
+    /// </summary>
+    public static event Action<UnitStat, int> OnBulletHit;
+    public static void CallBulletHit(UnitStat target, int damage)
+    {
+        OnBulletHit?.Invoke(target, damage);
+    }
 }

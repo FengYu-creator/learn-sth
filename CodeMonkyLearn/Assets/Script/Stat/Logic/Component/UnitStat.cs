@@ -71,7 +71,7 @@ public class UnitStat : MonoBehaviour
     public UnitData unitData;
 
     /// <summary>战时属性（战斗开始后计算填充）</summary>
-    [HideInInspector] public BattleStats battleStats;
+    public BattleStats battleStats;
 
     private void Start()
     {

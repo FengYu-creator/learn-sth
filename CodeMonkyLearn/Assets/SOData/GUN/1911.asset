@@ -18,7 +18,7 @@ MonoBehaviour:
   VerticalStability: 3
   Handling: 8
   Precision: 3
-  Range: 0
+  Range: 50
   BaseDamage: 20
   FireRate: 0.5
   StaminaCost: 10

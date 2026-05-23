@@ -23,7 +23,7 @@ public class BattleStart : MonoBehaviour
     }
     private void ClickBattleStart()
     {
-        battleStartButton.onClick.AddListener(() => { UnitActionSystem.Instance.OnBattleStart(); Destroy(battleStartButton.gameObject);Events.CallBattleStarted(); });
+        battleStartButton.onClick.AddListener(() => { UnitActionSystem.Instance.SetSelectedUnit(null); UnitActionSystem.Instance.OnBattleStart(); Destroy(battleStartButton.gameObject);Events.CallBattleStarted(); });
     }
     //todo：进入关卡时生成开始战斗按钮
 

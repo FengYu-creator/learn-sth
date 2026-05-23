@@ -13,6 +13,7 @@ public class Unit : MonoBehaviour
     private MoveAction moveAction;
     private SpinAction spinAction;
     private BaseAction[] baseActionArray;
+    private HealthSystem healthSystem;
     private int actionPoint = 2;
     private const int ACTION_POINTS_MAX = 2;
 
@@ -25,6 +26,7 @@ public class Unit : MonoBehaviour
         spinAction = GetComponent<SpinAction>();
         baseActionArray = GetComponents<BaseAction>();
         unitStat = GetComponent<UnitStat>();
+        healthSystem = GetComponent<HealthSystem>();
     }
 
     private void Start()

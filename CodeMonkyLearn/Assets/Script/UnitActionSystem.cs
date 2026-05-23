@@ -15,6 +15,7 @@ public class UnitActionSystem : MonoBehaviour
     public event EventHandler<bool> OnBusyChanged;
     public event EventHandler OnActionStarted;
     private bool isBattleStart=false;
+    public bool IsBattleStart => isBattleStart;
 
 
     private bool isBusy;

@@ -40,9 +40,9 @@ public static class Events
     /// <summary>
     /// 子弹命中目标事件
     /// </summary>
-    public static event Action<UnitStat, int> OnBulletHit;
-    public static void CallBulletHit(UnitStat target, int damage)
+    public static event Action<Unit, Unit, int> OnBulletHit;
+    public static void CallBulletHit(Unit attacker, Unit target, int damage)
     {
-        OnBulletHit?.Invoke(target, damage);
+        OnBulletHit?.Invoke(attacker, target, damage);
     }
 }

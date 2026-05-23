@@ -81,15 +81,15 @@ public class GunData : ScriptableObject
     public GunType gunType;
 
     [Header("枪械基础属性")]
-    [Tooltip("横向后座")]
+    [Tooltip("横向后座0.2")]
     public int HorizontalStability;
     [Tooltip("纵向后座")]
     public int VerticalStability;
-    [Tooltip("操控性-控制晃动")]
-    public int Handling;
+    [Tooltip("操控难度-影响晃动速度2")]
+    public int ControlDifficulty;
     [Tooltip("精准度-控制预瞄线长度")]
     public int Precision;
-    [Tooltip("射程（格子数）")]
+    [Tooltip("射程（每点半格）")]
     public int Range;
     [Tooltip("基础伤害")]
     public int BaseDamage;
@@ -99,6 +99,8 @@ public class GunData : ScriptableObject
     public int StaminaCost;
     [Tooltip("弹匣容量")]
     public int MaxAmmo;
+    [Tooltip("重量-晃动范围0.5")]
+    public int Weight;
 
     [Header("角色属性百分比修正（战斗时生效）")]
     [Tooltip("稳定性修正（百分比，如10=角色稳定性+10%）")]

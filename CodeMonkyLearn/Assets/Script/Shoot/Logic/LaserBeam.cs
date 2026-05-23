@@ -57,7 +57,9 @@ public class LaserBeam : MonoBehaviour
         Vector3 direction = (Events.LaserTargetPosition - origin).normalized;
 
         List<Vector3> points = new List<Vector3> { origin };
-        float maxDist = (unitStat != null) ? unitStat.battleStats.OBPrecision * 100f : 50f;
+
+        // 激光基础长度 = Precision * 1f
+        float maxDist = GetLaserMaxDistance();
         float remainingDistance = maxDist;
 
         for (int i = 0; i <= maxReflectCount; i++)
@@ -133,5 +135,42 @@ public class LaserBeam : MonoBehaviour
         var selectedUnit = UnitActionSystem.Instance.GetSelectedUnit();
         if (selectedUnit == null) return false;
         return selectedUnit.GetComponent<UnitStat>() == unitStat;
+    }
+
+    /// <summary>
+    /// 获取激光最大距离：Precision * 1f × OBPrecision 加成
+    /// OBPrecision 渐进上限函数 f(x) = 0.8 × x / (x + 12)，百分比增加激光长度
+    /// </summary>
+    private float GetLaserMaxDistance()
+    {
+        float baseRange = 50f; // fallback
+
+        if (unitStat != null)
+        {
+            var unit = unitStat.GetComponent<Unit>();
+            if (unit != null)
+            {
+                var unitGun = unit.GetComponent<UnitGun>();
+                if (unitGun != null && unitGun.HasGun())
+                {
+                    var gunInst = unitGun.GetMyGun();
+                    if (gunInst.HasValue)
+                    {
+                        baseRange = gunInst.Value.template.Precision * 1f;
+                    }
+                }
+            }
+
+            // OBPrecision 渐进上限加成：最大 80%
+            float obPrecision = unitStat.battleStats.OBPrecision;
+            float precisionBonus = obPrecision > 0f ? 0.8f * obPrecision / (obPrecision + 12f) : 0f;
+            float rawRange = baseRange;
+            baseRange *= (1f + precisionBonus);
+
+            Debug.Log($"[LaserBeam] OBPrecision={obPrecision} precisionBonus={precisionBonus:F3} | " +
+                      $"range_raw={rawRange:F1} range_final={baseRange:F1}");
+        }
+
+        return baseRange;
     }
 }

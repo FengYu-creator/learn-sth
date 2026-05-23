@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunData
   gunName: 1911
   gunType: 0
-  HorizontalStability: 3
-  VerticalStability: 3
-  Handling: 8
-  Precision: 3
-  Range: 50
+  HorizontalStability: 10
+  VerticalStability: 10
+  ControlDifficulty: 10
+  Precision: 10
+  Range: 20
   BaseDamage: 20
   FireRate: 0.5
   StaminaCost: 10
   MaxAmmo: 11
+  Weight: 2
   StabilityMod: 0
   PrecisionMod: 0
   HandlingMod: 0

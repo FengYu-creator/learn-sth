@@ -71,8 +71,8 @@ public class UnitStatData
 
 public enum StatName
 {
-    //   稳定     操控  精准              体质     意志   速度
-    Stability,Handling,Precision, Constitution,Willpower,Speed
+    //   稳定     操控  精准              体质     意志   速度  基础生命
+    Stability,Handling,Precision, Constitution,Willpower,Speed, baseHP
 }
 public enum Traits
 {
@@ -94,8 +94,9 @@ public struct CharacterStats
     public int Constitution;
     public int Willpower;
     public int Speed;
+    public int baseHP;  // 基础生命值
 
-    public CharacterStats(int stability,int handling,int precision,int constitution,int willpower,int speed)
+    public CharacterStats(int stability, int handling, int precision, int constitution, int willpower, int speed, int baseHP = 50)
     {
         this.Stability = stability;
         this.Handling = handling;
@@ -103,8 +104,9 @@ public struct CharacterStats
         this.Constitution = constitution;
         this.Willpower = willpower;
         this.Speed = speed;
+        this.baseHP = baseHP;
     }
-    public void SetStats(int stability, int handling, int precision, int constitution, int willpower, int speed)
+    public void SetStats(int stability, int handling, int precision, int constitution, int willpower, int speed, int baseHP = 50)
     {
         this.Stability = stability;
         this.Handling = handling;
@@ -112,8 +114,9 @@ public struct CharacterStats
         this.Constitution = constitution;
         this.Willpower = willpower;
         this.Speed = speed;
+        this.baseHP = baseHP;
     }
-    public void AddManyStats(int stability, int handling, int precision, int constitution, int willpower, int speed)
+    public void AddManyStats(int stability, int handling, int precision, int constitution, int willpower, int speed, int baseHP = 0)
     {
         this.Stability += stability;
         this.Handling += handling;
@@ -121,6 +124,7 @@ public struct CharacterStats
         this.Constitution += constitution;
         this.Willpower += willpower;
         this.Speed += speed;
+        this.baseHP += baseHP;
     }
     public CharacterStats AddStat(StatName statName, int addCount)
     {
@@ -133,6 +137,7 @@ public struct CharacterStats
             case StatName.Constitution: clone.Constitution += addCount; break;
             case StatName.Willpower: clone.Willpower += addCount; break;
             case StatName.Speed: clone.Speed += addCount; break;
+            case StatName.baseHP: clone.baseHP += addCount; break;
         }
         return clone;
     }
@@ -146,6 +151,7 @@ public struct CharacterStats
             StatName.Constitution => Constitution,
             StatName.Willpower => Willpower,
             StatName.Speed => Speed,
+            StatName.baseHP => baseHP,
             _ => 0
         };
     }

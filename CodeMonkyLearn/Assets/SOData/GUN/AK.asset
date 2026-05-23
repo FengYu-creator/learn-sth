@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunData
   gunName: AK
   gunType: 1
-  HorizontalStability: 5
-  VerticalStability: 5
-  Handling: 3
-  Precision: 5
-  Range: 100
+  HorizontalStability: 20
+  VerticalStability: 20
+  ControlDifficulty: 20
+  Precision: 20
+  Range: 30
   BaseDamage: 30
   FireRate: 0.2
   StaminaCost: 10
   MaxAmmo: 20
+  Weight: 5
   StabilityMod: 0
   PrecisionMod: 0
   HandlingMod: 0

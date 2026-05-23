@@ -155,9 +155,15 @@ public class Bullet : MonoBehaviour
         }
 
         // 触发命中事件
-        if (pathData.hitTarget != null)
+        if (pathData.hitTarget != null && pathData.attacker != null)
         {
-            Events.CallBulletHit(pathData.hitTarget, pathData.damage);
+            // 从 UnitStat 获取 Unit
+            Unit targetUnit = pathData.hitTarget.GetComponent<Unit>();
+            Unit attackerUnit = pathData.attacker;
+            if (targetUnit != null)
+            {
+                Events.CallBulletHit(attackerUnit, targetUnit, pathData.damage);
+            }
         }
 
         DestroySelf();

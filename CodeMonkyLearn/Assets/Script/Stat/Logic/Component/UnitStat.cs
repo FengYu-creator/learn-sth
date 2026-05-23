@@ -111,6 +111,7 @@ public class UnitStat : MonoBehaviour
         if (unitGun == null)
         {
             battleStats = BattleStats.Empty;
+            InitHealthSystem();
             yield break;
         }
 
@@ -119,6 +120,7 @@ public class UnitStat : MonoBehaviour
         {
             // 无枪，战时属性 = 角色自身基础值
             battleStats = CalculateBattleStatsWithoutGun();
+            InitHealthSystem();
             yield break;
         }
 
@@ -127,10 +129,30 @@ public class UnitStat : MonoBehaviour
         if (!GunManager.Instance.TryGetGun(gunId, out gun))
         {
             battleStats = BattleStats.Empty;
+            InitHealthSystem();
             yield break;
         }
 
         battleStats = CalculateBattleStats(gun);
+        InitHealthSystem();
+    }
+
+    /// <summary>
+    /// 初始化生命值系统
+    /// maxHP = baseHP + OBConstitution * 10
+    /// </summary>
+    private void InitHealthSystem()
+    {
+        var healthSystem = GetComponent<HealthSystem>();
+        if (healthSystem == null) return;
+
+        int baseHP = unitData.stats.baseHP;
+        int constitution = battleStats.OBConstitution;
+        int battleBonusHP = constitution * 10;
+
+        Debug.Log($"[UnitStat] {gameObject.name} 初始化生命值: baseHP={baseHP}, constitution={constitution}, bonusHP={battleBonusHP}, maxHP={baseHP + battleBonusHP}");
+
+        healthSystem.Init(baseHP, battleBonusHP);
     }
 
     /// <summary>无枪时，战时属性 = 角色自身基础值</summary>

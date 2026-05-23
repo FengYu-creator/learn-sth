@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunData
   gunName: Mosin
   gunType: 3
-  HorizontalStability: 7
-  VerticalStability: 7
-  Handling: 5
-  Precision: 8
-  Range: 200
+  HorizontalStability: 5
+  VerticalStability: 5
+  ControlDifficulty: 30
+  Precision: 30
+  Range: 30
   BaseDamage: 80
   FireRate: 1
   StaminaCost: 20
   MaxAmmo: 5
+  Weight: 7
   StabilityMod: 0
   PrecisionMod: 0
   HandlingMod: 0

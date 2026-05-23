@@ -17,6 +17,9 @@ public class BulletPathData
     /// <summary>命中目标组件引用</summary>
     public UnitStat hitTarget;
 
+    /// <summary>攻击者（射击单位）</summary>
+    public Unit attacker;
+
     /// <summary>最终折射方向（当没有命中敌人时，子弹最后沿此方向飞出）</summary>
     public Vector3 finalDirection;
 

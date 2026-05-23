@@ -47,19 +47,17 @@ public class ShootAction : MonoBehaviour
         if (firePoint == null) return;
 
         UnitStat unitStat = GetComponent<UnitStat>();
-        if (unitStat == null) return;
+        Unit unit = GetComponent<Unit>();
+        if (unitStat == null || unit == null) return;
 
         Vector3 targetPos = Events.LaserTargetPosition;
         Vector3 direction = (targetPos - firePoint.position).normalized;
 
         // 计算射程
         float maxRange = unitStat.battleStats.OBRange;
-        Debug.Log($"[ShootAction] OBRange原始值: {unitStat.battleStats.OBRange}, 射程: {maxRange}");
-        // 如果射程为0，设置为默认值 50
         if (maxRange <= 0f)
         {
             maxRange = 50f;
-            Debug.LogWarning("[ShootAction] OBRange为0，使用默认值50");
         }
         int damage = unitStat.battleStats.OBDamage;
 
@@ -74,7 +72,8 @@ public class ShootAction : MonoBehaviour
             damage
         );
 
-        // 设置子弹寿命：固定三秒
+        // 设置攻击者和子弹寿命
+        pathData.attacker = unit;
         pathData.timeout = 3f;
 
         // 生成子弹

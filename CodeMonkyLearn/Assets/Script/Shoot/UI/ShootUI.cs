@@ -42,14 +42,19 @@ public class ShootUI : MonoBehaviour
     private float shootCooldown = 0f;     // 射击间隔冷却计时
     private float fireInterval = 0.2f;   // 射击间隔（秒），从 UnitStat 获取
 
-    // specialCore 摆动参数
-    [Header("SpecialCore 摆动参数")]
-    [SerializeField] private float swingRange = 0.5f;  // 摆动幅度
-    [SerializeField] private float swingSpeed = 2f;    // 摆动速度
+    // specialCore 摆动参数（由枪械属性驱动）
     private const float coreY = 0.91f;                  // Y 轴固定值
+    private float swingAmplitude;   // A = Weight * 0.1
+    private float swingOmega;       // ω = ControlDifficulty * 0.1
+    private float swingOffsetD;     // D: 动态偏移，射击时 ± 后坐力×0.1，每秒衰减 0.5
+    private float hRecoilStep;      // 每次射击 D 的变化量 = OBHRecoil * 0.1
+    private const float swingDDecayRate = 2f;   // D 每秒衰减量
+    private const float swingDMax = 20f;            // D 上限：达到此值 sin 振幅归零、增量归零
+    private float aimMultiplier = 1f;               // 右键屏息平滑乘数，目标值 0.5~1
 
     private UnitStat currentStat;
     private ShootAction currentShootAction;
+    private GunData currentGunTemplate;
 
     void Start()
     {
@@ -138,7 +143,8 @@ public class ShootUI : MonoBehaviour
     private void OnSelectedUnitChanged(object sender, EventArgs e)
     {
         UpdateStatsFromCurrentUnit();
-        SetAimButtonVisible(currentShootAction != null);
+        bool shouldShow = currentShootAction != null && UnitActionSystem.Instance.IsBattleStart;
+        SetAimButtonVisible(shouldShow);
         UpdateAimButtonInteractable();
     }
 
@@ -178,6 +184,7 @@ public class ShootUI : MonoBehaviour
         {
             currentStat = null;
             currentShootAction = null;
+            currentGunTemplate = null;
             return;
         }
 
@@ -205,6 +212,80 @@ public class ShootUI : MonoBehaviour
         {
             currentGap = baseGap;
         }
+
+        // 获取枪械模板，计算正弦摆动参数
+        UpdateSwingParamsFromGun();
+    }
+
+    /// <summary>
+    /// 从当前单位装备的枪械模板获取正弦摆动参数
+    /// A = Weight * 0.1
+    /// ω = ControlDifficulty * 0.1
+    /// D 初始 = 0（动态偏移，射击时 ± OBHRecoil*0.1）
+    /// </summary>
+    private void UpdateSwingParamsFromGun()
+    {
+        currentGunTemplate = null;
+
+        if (currentStat == null)
+        {
+            ApplyDefaultSwingParams();
+            return;
+        }
+
+        var unit = currentStat.GetComponent<Unit>();
+        if (unit == null)
+        {
+            ApplyDefaultSwingParams();
+            return;
+        }
+
+        var unitGun = unit.GetComponent<UnitGun>();
+        if (unitGun == null || !unitGun.HasGun())
+        {
+            ApplyDefaultSwingParams();
+            return;
+        }
+
+        var gunInst = unitGun.GetMyGun();
+        if (!gunInst.HasValue)
+        {
+            ApplyDefaultSwingParams();
+            return;
+        }
+
+        currentGunTemplate = gunInst.Value.template;
+
+        // 正弦公式：f(t) = A × sin(ω × t) + D
+        swingAmplitude = currentGunTemplate.Weight * 0.1f;                    // A
+        swingOmega     = currentGunTemplate.ControlDifficulty * 0.1f;          // ω
+        hRecoilStep    = currentStat.battleStats.OBHRecoil * 0.1f;             // 每次射击 D 变化量
+        swingOffsetD   = 0f;                                                   // D 初始为 0
+
+        // OB 角色属性修正：渐进上限函数 f(x) = 0.8 × x / (x + 12)
+        // OBStability 和 OBHandling 百分比降低 A 和 ω
+        float stabilityReduction = 0.8f * currentStat.battleStats.OBStability / (currentStat.battleStats.OBStability + 12f);
+        float handlingReduction  = 0.8f * currentStat.battleStats.OBHandling  / (currentStat.battleStats.OBHandling  + 12f);
+        float obMod = (1f - stabilityReduction) * (1f - handlingReduction);
+        swingAmplitude *= obMod;
+        swingOmega     *= obMod;
+
+        Debug.Log($"[SwingParams] OBStability={currentStat.battleStats.OBStability} " +
+                  $"OBHandling={currentStat.battleStats.OBHandling} | " +
+                  $"stabilityReduc={stabilityReduction:F3} handlingReduc={handlingReduction:F3} obMod={obMod:F3} | " +
+                  $"A_raw={currentGunTemplate.Weight * 0.1f:F2} A_final={swingAmplitude:F2} " +
+                  $"ω_raw={currentGunTemplate.ControlDifficulty * 0.1f:F2} ω_final={swingOmega:F2}");
+    }
+
+    /// <summary>
+    /// 无枪时的默认摆动参数
+    /// </summary>
+    private void ApplyDefaultSwingParams()
+    {
+        swingAmplitude = 0.5f;   // 默认振幅
+        swingOmega     = 2f;     // 默认角频率
+        hRecoilStep    = 0.1f;   // 默认后坐步长
+        swingOffsetD   = 0f;     // D 初始为 0
     }
 
     void Update()
@@ -213,6 +294,20 @@ public class ShootUI : MonoBehaviour
         if (isInAimState && Input.GetKeyDown(KeyCode.Escape))
         {
             Events.CallAimStateExited();
+        }
+
+        // D 动态偏移衰减：始终匀速向 0 靠近，每秒 1.0
+        if (swingOffsetD != 0f)
+        {
+            float decay = swingDDecayRate * Time.deltaTime;
+            if (Mathf.Abs(swingOffsetD) <= decay)
+            {
+                swingOffsetD = 0f;
+            }
+            else
+            {
+                swingOffsetD -= Mathf.Sign(swingOffsetD) * decay;
+            }
         }
 
         // 只负责动画相关逻辑
@@ -227,8 +322,8 @@ public class ShootUI : MonoBehaviour
                 shootCooldown -= Time.deltaTime;
             }
 
-            // 按下左键 + 冷却完毕 → 发布射击事件
-            if (Input.GetKeyDown(KeyCode.Mouse0) && shootCooldown <= 0f)
+            // 按住左键 + 冷却完毕 → 发布射击事件（长按连射）
+            if (Input.GetKey(KeyCode.Mouse0) && shootCooldown <= 0f)
             {
                 shootCooldown = fireInterval;
 
@@ -238,6 +333,14 @@ public class ShootUI : MonoBehaviour
                 currentGap = Mathf.Min(currentGap, baseGap * 2f);
                 recoilTimer = recoilDelay;
                 waitingForRecovery = true;
+
+                // D 偏移 kick：根据完整函数值 f(t)=A×sin(ωt)+D 的正负，增量随 |D| 增大而减小
+                float fullValue = swingAmplitude * Mathf.Sin(Time.time * swingOmega) + swingOffsetD;
+                float dRatio = Mathf.Clamp01(Mathf.Abs(swingOffsetD) / swingDMax);
+                float safe = 1f - dRatio;
+                float effectiveStep = hRecoilStep * aimMultiplier * safe * safe * safe * safe * safe
+                                     * safe * safe * safe * safe * safe;  // (1-d)¹⁰，右键平滑减半
+                swingOffsetD += Mathf.Sign(fullValue) * effectiveStep;
 
                 // 发布射击事件（供其他系统响应，如 LaserBeam 等）
                 Events.CallShoot();
@@ -361,6 +464,10 @@ public class ShootUI : MonoBehaviour
 
     /// <summary>
     /// 更新 specialCore 世界坐标：鼠标射线与 Y=coreY 平面交点 + 垂直方向摆动
+    /// 正弦公式：f(t) = A × sin(ω × t) + D
+    ///   A = Weight * 0.1       (振幅，由枪械模板决定)
+    ///   ω = ControlDifficulty * 0.1  (角频率，由枪械模板决定)
+    ///   D = 动态偏移（射击时 ± OBHRecoil*0.1，每秒衰减 1.0）
     /// </summary>
     private void UpdateSpecialCoreMovement()
     {
@@ -380,8 +487,21 @@ public class ShootUI : MonoBehaviour
         // 垂直方向（叉积）
         Vector3 perpDir = Vector3.Cross(toBasePos, Vector3.up).normalized;
 
-        // 正弦摆动
-        float swingOffset = Mathf.Sin(Time.time * swingSpeed) * swingRange;
+        // 正弦摆动：|D| 越大振幅越小（陡峭衰减）
+        float dRatio = Mathf.Clamp01(Mathf.Abs(swingOffsetD) / swingDMax);
+        float safe = 1f - dRatio;
+        float effectiveAmplitude = swingAmplitude * safe * safe * safe * safe * safe
+                                  * safe * safe * safe;  // (1-d)⁸：极陡
+
+        // 柏林噪声叠加，增加晃动自然感
+        float noise = (Mathf.PerlinNoise(Time.time * 1f, 0.5f) - 0.5f) * 2f;  // [-1, 1]
+        float noiseStrength = 0.8f;  // 噪声相对振幅的比例
+        float swingOffset = effectiveAmplitude * (Mathf.Sin(Time.time * swingOmega) + noise * noiseStrength) + swingOffsetD;
+
+        // 右键屏息：整个函数值平滑减半（A、噪声、D 全部减半）
+        float aimTarget = Input.GetKey(KeyCode.Mouse1) ? 0.5f : 1f;
+        aimMultiplier = Mathf.Lerp(aimMultiplier, aimTarget, Time.deltaTime * 6f);
+        swingOffset *= aimMultiplier;
 
         // 最终位置
         Vector3 targetPos = basePos + perpDir * swingOffset;
@@ -391,6 +511,14 @@ public class ShootUI : MonoBehaviour
 
         // 写入全局激光目标位置，供 LaserBeam 读取
         Events.LaserTargetPosition = targetPos;
+
+        // 旋转选中单位面向激光目标点
+        Vector3 lookDir = (targetPos - unit.transform.position).normalized;
+        lookDir.y = 0f;
+        if (lookDir != Vector3.zero)
+        {
+            unit.transform.forward = lookDir;
+        }
     }
 
     // 应用 gap 数值到四条准星线

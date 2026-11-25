@@ -97,4 +97,7 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+# TMP 字体图集：132.5 MB，超过 GitHub 单文件 100 MB 硬限制，不入库
+# 已备份在仓库外：D:\Aother\GitHub\repo-backups\learn-sth\2026-11-25\
+# 字符集/描边/采样参数存在这个 .asset 里，光有 .ttf 还原不回来；.meta 仍照常跟踪（保 GUID）
 CodemonkeyLearn/Assets/Another/AlibabaPuHuiTi-3-115-Black SDF.asset

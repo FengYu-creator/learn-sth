@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a2d07b754fc7a4d90bd069d10ce933, type: 3}
+  m_Name: Sniper
+  m_EditorClassIdentifier: 
+  enemyName: Sniper
+  behaviorType: 0
+  icon: {fileID: -2696115198898644070, guid: 515138afb46ec0a45854690ac95aff51, type: 3}
+  baseHP: 80
+  stability: 10
+  handling: 10
+  precision: 10
+  constitution: 10
+  willpower: 10
+  speed: 10
+  OBStability: 10
+  OBHandling: 10
+  OBPrecision: 10
+  OBConstitution: 10
+  OBWillpower: 10
+  OBSpeed: 10
+  OBGunType: 0
+  OBDamage: 10
+  OBRange: 10
+  OBHRecoil: 10
+  OBVRecoil: 10
+  OBFireRate: 1
+  OBStaminaCost: 1
+  meleeDamage: 0
+  explosionDamage: 0
+  explosionRadius: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 1911
+  m_EditorClassIdentifier: Assembly-CSharp::GunData
+  gunName: 1911
+  gunType: 0
+  HorizontalStability: 10
+  VerticalStability: 10
+  ControlDifficulty: 10
+  Precision: 15
+  Range: 15
+  BaseDamage: 20
+  FireRate: 0.5
+  StaminaCost: 10
+  MaxAmmo: 11
+  Weight: 2
+  StabilityMod: 0
+  PrecisionMod: 0
+  HandlingMod: 0
+  compatibleParts:
+  - part: 0
+    allowedCategories: 00000000
+  - part: 2
+    allowedCategories: 00000000

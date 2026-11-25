@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c64680aa5e92e45be0c398db9bdf80, type: 3}
+  m_Name: LootItemDatabase
+  m_EditorClassIdentifier: 
+  foodLevel1:
+  - {fileID: 21300000, guid: 46c9e222084fcb8479b61a014526b5c0, type: 3}
+  - {fileID: 21300000, guid: fa43a2ae4bd4f3549b1a78ef1f93c2fb, type: 3}
+  - {fileID: 21300000, guid: ab2082854ad860d4fbf62766d6bfb0cc, type: 3}
+  - {fileID: 21300000, guid: 316dff5abe34e8141a34c6bc94df7d50, type: 3}
+  - {fileID: 21300000, guid: af5daa6ebf21da547bf2dbd117be0eb2, type: 3}
+  - {fileID: 21300000, guid: 403b15499d1e59b47b8590718eadcce9, type: 3}
+  - {fileID: 21300000, guid: 4d4ff22eb07fe5c46896549896c619e2, type: 3}
+  - {fileID: 21300000, guid: 692b8c1991d1def4f9c08938ccefadf9, type: 3}
+  - {fileID: 21300000, guid: 71d3bdc4796167e4db68bf5145f46b03, type: 3}
+  - {fileID: 21300000, guid: 7bf63216a975ad0439bab7efb3c8b0db, type: 3}
+  - {fileID: 21300000, guid: 01f306e51ae729b4dbc6cd5279f0e6e7, type: 3}
+  foodLevel2:
+  - {fileID: 21300000, guid: 88d9ab64717f4b94bb0d283517eb67f3, type: 3}
+  - {fileID: 21300000, guid: 66a094981b1713344846eadc5308c59c, type: 3}
+  - {fileID: 21300000, guid: d7350b9a53e43f740bba570039d5019e, type: 3}
+  - {fileID: 21300000, guid: 15bae82cc03bb8f4a98d4b763125c1f2, type: 3}
+  - {fileID: 21300000, guid: a6d76d9dc1f37b44d838a70d28267423, type: 3}
+  - {fileID: 21300000, guid: 8263c73d8309f434d87ee5e767e7d150, type: 3}
+  foodLevel3:
+  - {fileID: 21300000, guid: fc22341f57e2c9a418628f6c5a2127b5, type: 3}
+  - {fileID: 21300000, guid: 07d0039a7efd1164d9c790b69653a8e7, type: 3}
+  - {fileID: 21300000, guid: a5eb85f4ace6bd54b8544946adc210d2, type: 3}
+  partsLevel1:
+  - {fileID: 21300000, guid: 9f9c709a2a6c2b74db41b95c37537147, type: 3}
+  - {fileID: 21300000, guid: b586aac0c3622d942b364a52cd65a8dd, type: 3}
+  - {fileID: 21300000, guid: b1e8828cffc62454d8913e3774cb31ea, type: 3}
+  - {fileID: 21300000, guid: fa2409b9b5724be44929fbb66537907e, type: 3}
+  - {fileID: 21300000, guid: b2966203c0d5cc84cb3725aa98b577eb, type: 3}
+  - {fileID: 21300000, guid: ecf7de0c89c71bc42a6bc1b34ca464dc, type: 3}
+  - {fileID: 21300000, guid: 540bd2a50c3e32d448f6224801061dad, type: 3}
+  - {fileID: 21300000, guid: c04f8771cf2fcdd49a4f25abac8c7ff8, type: 3}
+  partsLevel2:
+  - {fileID: 21300000, guid: df52a41318b09624c9e95c7f3759df13, type: 3}
+  - {fileID: 21300000, guid: 00afacb81045a10488e4c84fcac8b1cc, type: 3}
+  - {fileID: 21300000, guid: b0ea02becf4a3e441bee0041b735ca52, type: 3}
+  - {fileID: 21300000, guid: bf8512468feeaac42b344d57940e122a, type: 3}
+  partsLevel3:
+  - {fileID: 21300000, guid: 4e1e9105a9c02494a8736c4fa6c36429, type: 3}
+  moneyLevel1:
+  - {fileID: 21300000, guid: b3e7ac788b0e3a049a47fc15d9483af7, type: 3}
+  - {fileID: 21300000, guid: 9d1cdcc48369dfa49987cfdfcb377edb, type: 3}
+  - {fileID: 21300000, guid: 21210cdd6e0693944ab2eb3939f2a910, type: 3}
+  - {fileID: 21300000, guid: 250648e8177e910439ffc964bd15db88, type: 3}
+  moneyLevel2:
+  - {fileID: 21300000, guid: 4d3bfd8dea072ae44bed1fa4c12fb65a, type: 3}
+  - {fileID: 21300000, guid: 3600ba1a0db35bb46825883acfda8fb0, type: 3}
+  moneyLevel3:
+  - {fileID: 21300000, guid: bccf5ed3c5e79804c8e7c9791193bd82, type: 3}
+  - {fileID: 21300000, guid: 61947dfed54dff3449c555b39cee5fca, type: 3}
+  - {fileID: 21300000, guid: d7761b4edf06de84785b982fb39b7644, type: 3}
+  - {fileID: 21300000, guid: 2bcd695971fd4634a804ea8bbe359b89, type: 3}
+  toolsLevel1:
+  - {fileID: 21300000, guid: 4f6f941c99fc5e541bbe175e2df2c231, type: 3}
+  - {fileID: 21300000, guid: 2b891e527ae706241bb4f5af10ab972d, type: 3}
+  - {fileID: 21300000, guid: 7e92e529934dc1f4cb4acf93fe852171, type: 3}
+  - {fileID: 21300000, guid: 1134dd099e6a89540a0a2e1dd821944b, type: 3}
+  - {fileID: 21300000, guid: 9f3203351c0abaf4387dbb6c642aa34d, type: 3}
+  - {fileID: 21300000, guid: 0026eac2fc199214c8d3713c33bb294b, type: 3}
+  - {fileID: 21300000, guid: edd7e9d47c3ab60439d124e00e62385d, type: 3}
+  - {fileID: 21300000, guid: 39a5875c2b0518f43b83ac7b2d469684, type: 3}
+  - {fileID: 21300000, guid: 25ad2c032bdd67445a15e8a7c5053e66, type: 3}
+  - {fileID: 21300000, guid: ff4ca02d657852c4ab34757896d2c399, type: 3}
+  - {fileID: 21300000, guid: ec34caaf0eb75b546aacc7f400884100, type: 3}
+  - {fileID: 21300000, guid: 1a9f170e678561a44a3fbc1d780d5dd1, type: 3}
+  - {fileID: 21300000, guid: 9d24077938caf184ebb8af6db4d97110, type: 3}
+  - {fileID: 21300000, guid: 70f329ea671277042b10a565f87b1fbe, type: 3}
+  toolsLevel2:
+  - {fileID: 21300000, guid: cf6623c2a6ae3204b9dd31432d7ad98d, type: 3}
+  - {fileID: 21300000, guid: 5ae4d0b23ff3c2f49a562ec6a08f72ba, type: 3}
+  - {fileID: 21300000, guid: 0d9b8cb7aa0f5c4499823d0fb83f10ef, type: 3}
+  - {fileID: 21300000, guid: 39c5ce97f07a8f5489b1322db4195461, type: 3}
+  - {fileID: 21300000, guid: 9dda3690d40f7044c9474636794b1489, type: 3}
+  - {fileID: 21300000, guid: 244423de37b327848820a160eaf7ea33, type: 3}
+  - {fileID: 21300000, guid: 24357369071e3364da07eb3611986780, type: 3}
+  - {fileID: 21300000, guid: 25dfec4c55209b14980bc12a265d9e66, type: 3}
+  - {fileID: 21300000, guid: 15b2fdcf498d15449b0b07c70f3b7e7d, type: 3}
+  - {fileID: 21300000, guid: c25fb19d051024249a705a4f9991ab40, type: 3}
+  - {fileID: 21300000, guid: 7aa133eec3d937a4ab823cf9067fe07b, type: 3}
+  toolsLevel3:
+  - {fileID: 21300000, guid: f203842ca72644c4780678cb0eb11cf4, type: 3}
+  - {fileID: 21300000, guid: daca2fe82867ff6459c5cc4c1ee46e3b, type: 3}
+  - {fileID: 21300000, guid: ab8bf710661f67d49bed63e4c8d99116, type: 3}
+  - {fileID: 21300000, guid: 3deff444ca5b77a42b2e679668668e94, type: 3}
+  - {fileID: 21300000, guid: 825047327fa5d0a489da4ff1bdc02611, type: 3}
+  medicineLevel1:
+  - {fileID: 21300000, guid: 096a160ba9efcb14284736c38bd31bf3, type: 3}
+  - {fileID: 21300000, guid: 0fe3c6543f6b9eb4dbd9c6b90faa0514, type: 3}
+  - {fileID: 21300000, guid: 5ccd062d316834a48b96df1856b59582, type: 3}
+  medicineLevel2:
+  - {fileID: 21300000, guid: d2c85206e194a924da24cbcea4d5e618, type: 3}
+  - {fileID: 21300000, guid: 4031eae029e6add4e83e8c9bc66d64cf, type: 3}
+  medicineLevel3:
+  - {fileID: 21300000, guid: 81f4f9efca0bb3f41a7d805c386fc136, type: 3}
+  grenadeLevel1:
+  - {fileID: 21300000, guid: 6499e38eb6288bd41bb221ae54881d0f, type: 3}
+  - {fileID: 21300000, guid: 2c15116e9947be247bbea915ab5ec2e0, type: 3}
+  grenadeLevel2:
+  - {fileID: 21300000, guid: 916a2091ff9667b4f86a8f0f3fab34d1, type: 3}
+  gunLevel1:
+  - {fileID: 21300000, guid: bc433ddb3f88de846b8a24f4b80f185c, type: 3}
+  gunLevel2:
+  - {fileID: 21300000, guid: 08b7e004b03587c46a4749d2cdcb2bc6, type: 3}

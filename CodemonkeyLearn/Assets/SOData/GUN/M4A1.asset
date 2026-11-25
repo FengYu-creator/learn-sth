@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: M4A1
+  m_EditorClassIdentifier: Assembly-CSharp::GunData
+  gunName: M4A1
+  gunType: 0
+  HorizontalStability: 15
+  VerticalStability: 15
+  ControlDifficulty: 15
+  Precision: 30
+  Range: 30
+  BaseDamage: 15
+  FireRate: 0.15
+  StaminaCost: 10
+  MaxAmmo: 20
+  Weight: 5
+  StabilityMod: 0
+  PrecisionMod: 0
+  HandlingMod: 0
+  compatibleParts: []
